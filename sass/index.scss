@@ -11,6 +11,7 @@
 
 body {
     display: grid;
+    background-color: #F5F6F9;
 }
 
 // Header
@@ -65,5 +66,90 @@ header {
                 text-decoration: none;
             }
         }
+    }
+}
+
+// Sidebar
+
+.sidebar {
+    height: 72px;
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4A35C9;
+    border-radius: 10px;
+    .sidebar__links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 33px;
+        .sidebar__overview {
+            display: flex;
+            .selector {
+                display: none;
+            }
+            .overview {
+                display: flex;
+                .overview__logo {
+                    width: 18px;
+                    height: 18px;
+                    background-image: url('../Assets/Overview.svg');
+                }
+                a {
+                    margin-left: 8px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .sidebar__reports {
+            display: flex;
+            .selector {
+                display: none;
+            }
+            .reports {
+                display: flex;
+                .reports__logo {
+                    width: 18px;
+                    height: 18px;
+                    background-image: url('../Assets/Report.svg');
+                }
+                a {
+                    margin-left: 8px;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .sidebar__settings {
+            display: flex;
+            .selector {
+                display: none;
+            }
+            .settings {
+                display: flex;
+                .settings__logo {
+                    width: 18px;
+                    height: 18px;
+                    background-image: url('../Assets/Settings.svg');
+                }
+                a {
+                    margin-left: 8px;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .sidebar__line {
+            display: none;
+        }
+        .sidebar__help {
+            display: none;
+        }
+    }
+    .sidebar__reports {
+        display: none;
     }
 }
