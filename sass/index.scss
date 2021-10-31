@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+// Globals
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+body {
+    display: grid;
+}
+
+// Header
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    padding: 0 24px;
+    background-color: #FFFFFF;
+    .header__left {
+        .header__logo {
+            width: 89px;
+            height: 23px;
+            background-image: url('../Assets/Logo.svg');
+        }
+        .header__search-bar {
+            display: none;
+        }
+    }
+    .header__links {
+        display: none;
+    }
+    .header__hamburger-nav {
+        position: relative;
+        width: 24px;
+        height: 20px;
+        background-image: url('../Assets/Hamburger\ Menu.svg');
+        cursor: pointer;
+    }
+    .header__close-nav {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+        .header__nav-dropdown {
+            position: absolute;
+            right: 24px;
+            width: 200px;
+            padding: 5px 0;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #4A35C9;
+            cursor: auto;
+            border-radius: 5px;
+            a {
+                margin: 10px;
+                font-size: 16px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+    }
+}
