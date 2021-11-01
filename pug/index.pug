@@ -9,6 +9,7 @@ html(lang="en")
         script(src="script.js") 
         title Ideate
     body 
+
         header 
             .header__left
                 .header__logo
@@ -24,6 +25,7 @@ html(lang="en")
                         a(href="#") Notifications
                         a(href="#") User Settings 
                         a(href="#") Profile
+
         nav.sidebar
             .sidebar__links 
                 .sidebar__overview
@@ -53,6 +55,52 @@ html(lang="en")
                     p This is the number of reports you have used this month.
                 p.reports__percentage
                 .reports__bar
+
+        main.main-graph 
+            .main-graph__title
+                h1 Reports Generated 
+                .filter-button
+                    .filter-button__img 
+                    a Filter 
+            .main-graph__stats 
+                .this-month
+                    h2 This month
+                    .this-month__percentage 
+                        h3 121 Reports 
+                        .percentage
+                            .arrow-up 
+                            p 5%
+                .vertical-line.vertical-line1
+                .last-month 
+                    h2 Last Month
+                    .last-month__percentage
+                        h3 109 Reports 
+                        .percentage
+                            .arrow-down 
+                            p 5%
+                .vertical_line.vertical_line2
+                .increase
+                    h2 % Increase
+                    .increase__percentage
+                        h3 50%
+            .main-graph__img-container 
+                .main-graph__img 
+            .main-graph__months 
+                p.jan Jan
+                p.feb Feb
+                p.mar Mar 
+                p.apr Apr
+                p.may May
+                p.jun Jun
+                p.jul Jul
+                p.aug Aug
+                p.sept Sept
+                p.oct Oct
+                p.nov Nov
+                p.dic Dic
+
+        
+
 
 
                 
